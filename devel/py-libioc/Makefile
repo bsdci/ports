@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	libioc
-PORTVERSION=	0.4.0
+PORTVERSION=	0.4.1
 CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -30,8 +30,5 @@ USES=		python:3.6+
 USE_PYTHON=	distutils py3kplist
 
 PLIST_SUB+=	PORTVERSION=${PORTVERSION}
-
-post-install:
-	${INSTALL_SCRIPT} ${WRKSRC}/rc.d/ioc ${STAGEDIR}${PREFIX}/etc/rc.d/ioc
 
 .include <bsd.port.mk>
