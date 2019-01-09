@@ -5,6 +5,7 @@
 %%PYTHON_SITELIBDIR%%/ioc/VersionedResource.py
 %%PYTHON_SITELIBDIR%%/ioc/Firewall.py
 %%PYTHON_SITELIBDIR%%/ioc/Config/__init__.py
+%%PYTHON_SITELIBDIR%%/ioc/Config/Data.py
 %%PYTHON_SITELIBDIR%%/ioc/Config/Dataset.py
 %%PYTHON_SITELIBDIR%%/ioc/Config/Type/__init__.py
 %%PYTHON_SITELIBDIR%%/ioc/Config/Type/ZFS.py
