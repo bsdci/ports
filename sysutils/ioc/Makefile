@@ -10,8 +10,9 @@ COMMENT=	Jail management CLI using libioc
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pip>0:devel/py-pip@${PY_FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ioc>0:devel/py-libioc@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}libioc>0:devel/py-libioc@${PY_FLAVOR} \
+				${PYTHON_PKGNAMEPREFIX}texttable>0:textproc/py-texttable@${PY_FLAVOR} \
+				${PYTHON_PKGNAMEPREFIX}click>0:devel/py-click@${PY_FLAVOR} \
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	bsdci
@@ -28,8 +29,6 @@ pre-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/lib/ioc
 
 do-install:
-	${PYTHON_CMD} -m ensurepip
-	${PYTHON_CMD} -m pip install -r ${WRKSRC}/requirements.txt
 	${INSTALL_SCRIPT} ${WRKSRC}/rc.d/ioc ${STAGEDIR}${PREFIX}/etc/rc.d
 	${INSTALL_SCRIPT} ${WRKSRC}/bin/ioc ${STAGEDIR}${PREFIX}/bin
 	(cd ${WRKSRC}/ && ${COPYTREE_SHARE} ioc_cli ${STAGEDIR}${PREFIX}/lib/ioc)
