@@ -1,4 +1,3 @@
-Provides programmatic access to ioc{age,ell} features and jails, while aiming to be
-compatible with iocage_legacy, and the Python 3 version of iocage < 1.0.
+Jail management CLI using libioc (compatible with iocage/iocell)
 
-WWW: https://github.com/bsdci/libioc
+WWW: https://github.com/bsdci/ioc

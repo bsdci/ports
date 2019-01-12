@@ -21,12 +21,13 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}GitPython>0:devel/py-gitpython@${PY_FLAVOR} 
 		ca_root_nss>0:security/ca_root_nss \
 		rsync:net/rsync
 
+USES=		python:3.6+
+
 USE_GITHUB=	yes
 GH_ACCOUNT=	bsdci
 GH_PROJECT=	libioc
 
 NO_ARCH=	yes
-USES=		python:3.6+
 USE_PYTHON=	distutils py3kplist autoplist
 
 PLIST_SUB+=	PORTVERSION=${PORTVERSION}

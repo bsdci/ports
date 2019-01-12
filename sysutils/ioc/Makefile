@@ -12,7 +12,9 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}libioc>0:devel/py-libioc@${PY_FLAVOR} \
 				${PYTHON_PKGNAMEPREFIX}texttable>0:textproc/py-texttable@${PY_FLAVOR} \
-				${PYTHON_PKGNAMEPREFIX}click>0:devel/py-click@${PY_FLAVOR} \
+				${PYTHON_PKGNAMEPREFIX}click>0:devel/py-click@${PY_FLAVOR}
+
+USES=		python:3.6+
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	bsdci
@@ -20,7 +22,6 @@ GH_PROJECT=	ioc
 
 NO_ARCH=	yes
 NO_BUILD=   yes
-USES=		python:3.6+
 
 USE_RC_SUBR=    ioc
 
@@ -34,6 +35,5 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/rc.d/ioc ${STAGEDIR}${PREFIX}/etc/rc.d
 	${INSTALL_SCRIPT} ${WRKSRC}/bin/ioc ${STAGEDIR}${PREFIX}/bin
 	(cd ${WRKSRC}/ && ${COPYTREE_SHARE} ioc_cli ${STAGEDIR}${PREFIX}/lib/ioc)
-
 
 .include <bsd.port.mk>
