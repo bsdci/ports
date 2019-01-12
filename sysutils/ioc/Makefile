@@ -26,7 +26,7 @@ NO_BUILD=   yes
 USE_RC_SUBR=    ioc
 
 post-patch:
-	@${REINPLACE_CMD} -e "s#LIB_DIR =.*#LIB_DIR = \"${STAGEDIR}${PREFIX}/lib/ioc\"#" ${WRKSRC}/bin/ioc
+	@${REINPLACE_CMD} -e "s#LIB_DIR =.*#LIB_DIR = \"${PREFIX}/lib/ioc\"#" ${WRKSRC}/bin/ioc
 
 pre-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/lib/ioc
