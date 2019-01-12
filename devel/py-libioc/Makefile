@@ -27,7 +27,7 @@ GH_PROJECT=	libioc
 
 NO_ARCH=	yes
 USES=		python:3.6+
-USE_PYTHON=	distutils py3kplist
+USE_PYTHON=	distutils py3kplist autoplist
 
 PLIST_SUB+=	PORTVERSION=${PORTVERSION}
 
