@@ -1,5 +1,4 @@
 bin/ioc
-etc/rc.d/ioc
 lib/ioc/ioc_cli/__init__.py
 lib/ioc/ioc_cli/activate.py
 lib/ioc/ioc_cli/clone.py

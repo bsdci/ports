@@ -22,6 +22,8 @@ NO_ARCH=	yes
 NO_BUILD=   yes
 USES=		python:3.6+
 
+USE_RC_SUBR=    ioc
+
 post-patch:
 	@${REINPLACE_CMD} -e "s#LIB_DIR =.*#LIB_DIR = \"${STAGEDIR}${PREFIX}/lib/ioc\"#" ${WRKSRC}/bin/ioc
 
