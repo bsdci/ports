@@ -16,8 +16,6 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}GitPython>0:devel/py-gitpython@${PY_FLAVOR} 
 		${PYTHON_PKGNAMEPREFIX}ucl>0:textproc/py-ucl@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}libzfs>0:devel/py-libzfs@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}sysctl>0:devel/py-sysctl@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}click>0:devel/py-click@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}texttable>0:textproc/py-texttable@${PY_FLAVOR} \
 		ca_root_nss>0:security/ca_root_nss \
 		rsync:net/rsync
 
