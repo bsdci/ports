@@ -1,7 +1,7 @@
 # $FreeBSD$
 
-PORTNAME=	ioc
-PORTVERSION=	0.8.0
+PORTNAME= ioc
+PORTVERSION= 0.8.2
 CATEGORIES=	sysutils
 
 MAINTAINER=	stefan@gronke.net
