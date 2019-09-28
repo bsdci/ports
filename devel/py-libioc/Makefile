@@ -6,7 +6,7 @@ CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	stefan@gronke.net
-COMMENT=	Library to manage jails with ioc{age,ell}
+COMMENT=	Python 3 module to access to ioc{age,ell} jails and features
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
