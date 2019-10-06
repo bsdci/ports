@@ -2,7 +2,7 @@
 
 PORTNAME=		jail
 PORTVERSION=	0.0.9
-CATEGORIES=		devel python
+CATEGORIES=		devel python sysutils
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=		stefan@gronke.net
