@@ -14,7 +14,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}libioc>0:devel/py-libioc@${PY_FLAVOR} \
 				${PYTHON_PKGNAMEPREFIX}texttable>0:textproc/py-texttable@${PY_FLAVOR} \
 				${PYTHON_PKGNAMEPREFIX}click>0:devel/py-click@${PY_FLAVOR}
 
-USES=		python:3.6+
+USES=		python:3.6+ shebangfix
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	bsdci
@@ -22,6 +22,11 @@ GH_PROJECT=	ioc
 
 NO_ARCH=	yes
 NO_BUILD=   yes
+
+SHEBANG_LANG= python
+SHEBANG_FILES= ./bin/ioc
+python_OLD_CMD= "/usr/local/bin/python3.6"
+
 
 USE_RC_SUBR=    ioc
 
